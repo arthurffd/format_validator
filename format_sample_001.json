@@ -1,0 +1,48 @@
+{"format": {
+    "format_name": "csv_sample_001",
+	
+	"csv": {
+		"delimiter": ";",
+		"compression": "gzip",
+		"header": "true",
+		"validate_keys": "false"
+	},
+	
+	"columns": {
+		"CODIGO": {
+			"type": "integer",
+			"nullable": "false",
+			"key": "true"
+		},
+		"NOME": {
+			"type": "string",
+			"nullable": "false",
+			"size": "150"
+		},
+		"CPF": {
+			"type": "string",
+			"size": "14",
+			"nullable": "true",
+			"key": "false"
+		},
+		"NASCIMENTO": {
+			"type": "date",
+			"date_format": "dd/mm/yyyy",
+			"min_date": "01/01/1900",
+			"max_date": "31/12/2050",
+			"nullable": "true",
+			"key": "false"
+			},
+			
+		"SALDO": {
+			"type": "float",
+			"nullable": "yes",
+			"key": "false",
+			"decimal": ",",
+			"thousand": ".",
+			"negative": "true",
+			"currency_symbol": "R$"
+		}
+	}
+  }
+}
